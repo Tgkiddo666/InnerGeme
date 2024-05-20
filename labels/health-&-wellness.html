@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health & Wellness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/a/settings/styles/labels.css">
+</head>
+<body>
+
+<header>
+  <a href="../index.html"><img class="logo" src="/a/settings/images/solid/logo.svg" alt="logo"></a>
+
+  <div class="nav">
+    <button class="navb books">Books</button>
+    <button class="navb about">Services</button>
+    <button class="navb" id="navb">Read Now</button>        
+  </div>
+</header>
+
+  <div class="popularText"><span>Health & Wellness</span></div>
+  <div class="popularPosts" id="content">
+
+
+
+  </div>
+
+    <div class="end">
+
+
+      <div class="footer" id="fixedDiv">
+
+          <div class="labelsnav">          
+              <a href="/a/labels/ai-for-profit.html"> <button class="label">AI For Profit</button></a>
+              <a href="/a/labels/social-media-growth.html"><button class="label">Social Media Growth</button></a>
+              <a href="/a/labels/entrepreneurship.html"><button class="label">Entrepreneurship</button></a>
+              <a href="/a/labels/personal-growth.html"><button class="label">Personal Development</button></a>
+              <a href="/a/labels/mental-health.html"><button class="label">Mental Health</button></a>
+              <a href="/a/labels/online-income-strategies.html"><button class="label">Online Income Strategies</button></a>
+              <a href="/a/labels/health-&-wellness.html"><button class="label">Health & Wellness</button></a>
+              <a href="/a/labels/diet-&-nutrition.html"><button class="label">Diet & Nutrition</button></a>
+              <a href="/a/labels/recipes.html"><button class="label">Recipes</button></a>
+              <a href="/a/labels/keto.html"><button class="label">Keto & Low Carb</button></a>
+              <a href="/a/labels/fitness-&-exercise.html"><button class="label">Fitness & Exercise</button></a>
+              <a href="/a/labels/beauty-tips-and-tricks.html"><button class="label">Beauty Tips & Tricks</button></a>
+              <a href="/a/labels/life-transfomation.html"><button class="label">Life Transformation</button></a>
+          </div>
+
+        <div class="websitenav">
+          <a href="../../index.html" class="webnav">Home</a>
+          <a href="services.html" class="webnav">Books</a>
+          <a href="subscribe.html" class="webnav">Newsletter</a>
+          <a href="shop.html" class="webnav">Store</a>
+          <a href="merch.html" class="webnav">Services</a>
+          <a href="/a/pages/contact.html" class="webnav">Contact</a>
+          <a href="/a/pages/about.html" class="webnav">About</a>
+          <a href="/a/pages/terms.html" class="webnav">Terms</a>
+          <a href="/a/pages/privacy.html" class="webnav">Privacy</a>
+        </div>
+
+      </div>
+
+    </div>
+  <script>
+
+  fetch('/1/label/health-&-wellness.html') 
+      .then(response => response.text())
+      .then(data => {
+
+          document.getElementById('content').innerHTML = data;
+      })
+      .catch(error => console.error('Error fetching content:', error));
+  </script>
+</body>
+</html>

@@ -1,2 +1,2 @@
-    ErrorDocument 404 /error-404-page-not-found.html
+    ErrorDocument 404 /a/pages/error-404-page-not-found.html
     /homepage.html /index.html

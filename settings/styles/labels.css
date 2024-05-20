@@ -1,0 +1,474 @@
+
+
+
+
+
+* {
+  font-family: "Exo 2", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  background-color: white;
+  color: ;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.logo{
+  margin-left: 30px;
+}
+
+.nav{
+    margin-right: 30px;
+}
+
+.navb{
+    width: 70px;
+    height: 60px;
+    display: inline;
+    border: none;
+    background: transparent;
+    color: black;
+}
+
+#navb{
+    width: 100px;
+    height: 35px;
+    display: inline;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 20px;
+}
+
+#navp{
+    width: 100px;
+}
+
+.popularText{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.popularText h1{
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  display: flex;
+  flex-wrap: wrap;
+}
+  
+.popularPosts {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.popularPosts p{
+  font-size: 18px;
+  cursor: alias;
+}
+
+.readyPopular, .product-container{
+  font-family: "Libre Baskerville", serif;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: solid;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.writerAuthor{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+  
+.author p{
+  font-size: 17px;
+  margin: 2px;
+}
+
+.authorImg{
+  width: 20px;
+  height: auto;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.company{
+  width: 20px;
+  height: auto;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.verified{
+  margin-left: 2px;
+}
+
+.popularArticle{
+  font-size: 17px;
+  font-weight: bold;
+  margin: 5px;
+}
+  
+.end {
+  background: ;
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  background: ;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 50px;
+  position: sticky;
+}
+
+.labelsnav{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.heading{
+  display: flex;
+  margin: 10px;
+  align-self: center;
+}
+
+.label{
+  height: 45px;
+  width: auto;
+  border-radius: 25px;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  cursor: pointer;
+  border: solid;
+}
+
+.label2{
+  height: 35px;
+  width: auto;
+  border: none;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background: #f0f8ff;
+  color: gray;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.websitenav{
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  width: 30%;
+}
+
+.webnav{
+  text-decoration: none;
+  color: #000;
+  margin: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.social{
+  margin: 10px;
+}
+
+.social svg{
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.copyright{
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.copyright2{
+  display: none;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.inpost {
+  width: 40%;
+  margin:  auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.inpost h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.inpost h2 {
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+.inpost p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.inpost img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+@media only screen and (min-width: 769px) and (max-width: 999px) {
+  .trendposts {
+    flex-direction: column;
+    just
+  }
+  .readypost {
+    width: 90%;
+    jusitfy-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .about{
+    display: none;
+  }
+  .productscont{
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* For tablets */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .about{
+    display: none;
+  }
+  .trendposts{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .trend{
+    margin: 10px;
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .trending{
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .readypost{
+    align-items: center;
+    width: 100%;
+    background: ;
+  } .title{
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .productscont{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer {
+    width: 100%;
+  }
+  .posts {
+    width: 100%;
+}
+.copyright{
+  display: none;
+}
+.copyright2{
+  display: block;
+}
+.labelsnav{
+  justify-content: center;
+}  
+  .websitenav{
+    width: 60%;
+  }
+}
+
+/* For small tablets */
+@media only screen and (min-width: 400px) and (max-width: 599px) {
+  .ima{
+    display: none;
+  }
+  .about{
+    display: none;
+  }  
+  .paid{
+    display: none;
+  }
+
+  .popularText{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .popularText{
+    font-size: 40px;
+  }
+
+  .readyPopular{
+    width: 250px;
+  }
+  .infoArticle p{
+    font-size: 12px;
+  }
+.copyright{
+  display: none;
+}
+.copyright2{
+  display: block;
+}
+.labelsnav{
+  justify-content: center;
+}  
+  .websitenav{
+    width: 70%;
+  }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 399px) {
+  *{
+    overflow-x: hidden;
+  }
+  
+  header{
+  }
+  .about{
+    display: none;
+  }
+  .paid{
+    display: none;
+  }
+  .books{
+    display: none;
+  }
+  .navb{
+    display: none;
+  }
+.popularText{
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+.readyPopular{
+  width: 92%;
+
+}
+  .infoArticle{
+    display: ;
+  }
+  .writerAuthor{
+  }
+  
+.footer {
+  width: 100%;
+}
+.copyright{
+  display: none;
+}
+.copyright2{
+  display: block;
+}
+.labelsnav{
+  justify-content: center;
+  width: 90%;
+}  
+.websitenav{
+  width: 90%;
+}
+}
