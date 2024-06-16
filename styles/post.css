@@ -1,5 +1,11 @@
 /* General Settings */
 
+font-face {
+  font-family: 'Nunito-Regular';
+  src: url('/settings/fonts/Nunito-Regular.woff') format('woff'),
+       url('/settings/fonts/Nunito-Regular.woff2') format('woff2');
+}
+
 @font-face {
   font-family: 'SourceSansPro-Regular';
   src: url('/settings/fonts/SourceSansPro-Regular.woff') format('woff'),
@@ -57,21 +63,28 @@
   --white: #ffffff;
   --black: #000000;
 } */
-
-:root {
-  --background-color: #f8f8f8;
-  --text: #1b1b1b;
-  --accent: #2a55b0;
-  --accent-li: #e6f0ff;
-  --accent-ne: #e6f0ff;
-  --accent-da: #14275a;
-  --accent-der: #162c66;
-  --white: #ffffff;
-  --black: #000000;
-  --aicol: #e6f0ff;
-  --load1: #ffffff;
-  --load2: #2a55b0;
-}
+  
+  :root {
+    --background-color: #f8f8f8;
+    --text: #1b1b1b;
+    --accent: #2a55b0;
+    --accent-li: #e6f0ff;
+    --accent-ne: #e6f0ff;
+    --accent-da: #14275a;
+    --accent-der: #162c66;
+    --white: #ffffff;
+    --black: #000000;
+    --aicol: #e6f0ff;
+    --load1: #ffffff;
+    --load2: #2a55b0;
+    --logobg: transparent;
+    --logotext: #000000;
+    --color-1: #2a55b0;
+    --color-2: #2a55b0;
+    --color-3: #2a55b0;
+    --color-4: #2a55b0;
+    --color-5: #2a55b0;
+} 
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
@@ -86,6 +99,15 @@
     --white: #374552;
     --black: #ffffff;
     --aicol: #374552;
+    --load1: #000000;
+    --load2: #ffffff;
+    --logobg: transparent;
+    --logotext: #ffffff;
+    --color-1: #a8afba;
+    --color-2: #a8afba;
+    --color-3: #a8afba;
+    --color-4: #a8afba;
+    --color-5: #a8afba;
   }
 }
 
@@ -101,6 +123,15 @@
   --white: #374552;
   --black: #ffffff;
   --aicol: #374552;
+  --load1: #000000;
+  --load2: #ffffff;
+  --logobg: transparent;
+  --logotext: #ffffff;
+    --color-1: #374552;
+      --color-2: #374552;
+      --color-3: #374552;
+      --color-4: #374552;
+      --color-5: #374552;
 }
 
 
@@ -153,11 +184,6 @@ p {
   font-size: 30px;
 }
 
-.hide {
-  visibility: hidden;
-  
-}
-
 li::marker {
 color: var(--accent);
 }
@@ -188,13 +214,6 @@ header {
   justify-content: center;
 }
 
-.breadcrumbs-container{
-  display: none;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-}
-
 .full-blog-post-sides{
   display: flex;
   flex-direction: row;
@@ -212,13 +231,6 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-}
-
-.white-color{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 
 .post-content {
@@ -408,6 +420,11 @@ header {
   width: 100%;
 }
 
+.logo {
+  width: 60px;
+  height: auto;
+}
+
 .post-container {
   width: 70%;
 }
@@ -497,7 +514,7 @@ header {
   width: 100%;
 }
 
-.product button{
+.buy-button {
   width: 50%;
   border-radius: 20px;
 }
@@ -655,7 +672,7 @@ header {
   padding: 5px;
 }
 
-.product button{
+.buy-button{
   margin: 4px;
   padding: 8px;
 }
@@ -909,7 +926,7 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.product button{
+.buy-button{
   color: #ffffff;
   background-color: var(--accent);
   border: none;
@@ -989,7 +1006,7 @@ header {
 
 
 .new-color {
-  color: var(--text);
+  color: var(--accent-der);
   background-color: var(--aicol);
   font-family: "SourceSansPro-Regular", sans-serif;
   border-radius: 30px;
@@ -1278,7 +1295,23 @@ ul.custom-list li a:hover {
             margin: 5px 0;
         }
 
+footer{
+  margin-top: 50px;
+}
 
+.divider {
+ 
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  color: var(--text);
+  font-size: 16px;
+  font-family: "Exo 2", sans-serif;
+}
 
 #credits {
   display: flex;
@@ -1313,7 +1346,55 @@ ul.custom-list li a:hover {
   
 }
 
-.source{
+.source {
   border: none;
   background: transparent;
 }
+
+.cards-title {
+  margin: 50px 0 20px;
+  padding-left: 75px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--accent-der);
+}
+
+.cards-container {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    padding: 10px 75px 10px;
+    width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    text-align: center;
+    flex: 0 0 auto;
+    width: 300px;
+    min-width: 300px;
+    padding: 40px;
+    border-radius: 5  0px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  line-height: 1.3;
+  text-align: center;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
